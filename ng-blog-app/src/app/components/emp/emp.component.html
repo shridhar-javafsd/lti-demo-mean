@@ -1,0 +1,18 @@
+<div>
+    <p>Emp component works!</p>
+    <p>Name: {{empData.firstName}} </p>
+    <p>Name: {{empData.firstName | uppercase }} </p>
+    <p>Name: {{empData.firstName | lowercase }} </p>
+    <p>Birth date: {{empData.birthDate}} </p>
+    <p>Birth date: {{empData.birthDate | date }} </p>
+    <p>Birth date: {{empData.birthDate | date : 'd MMM y'}} </p>
+    <p>Birth date: {{empData.birthDate | date : 'd MMM y' | uppercase}} </p>
+    <!-- <p>Salary: {{empData.salary}} </p> -->
+    <!-- <p>Salary: {{empData.salary | currency}} </p> -->
+    <p>Salary: {{empData.salary | currency : 'INR'}} </p>
+    <!-- <p>Salary: {{empData.salary | currency : 'USD'}} </p> -->
+    <!-- <p>Salary: {{empData.salary | currency : 'GBP'}} </p> -->
+    <!-- <p>Salary: {{empData.salary | currency : 'EUR'}} </p> -->
+    <p>Bonus: {{empData.bonus / 100 | percent : '2.2'}} </p>
+
+</div>

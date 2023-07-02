@@ -1,0 +1,9 @@
+<div>
+    <p class="lead fw-bold"> {{commentsData.length}} Comments</p>
+    <div *ngFor="let comment of commentsData">
+        <p class="lead">{{comment.name}}</p>
+        <p>{{comment.body}}</p>
+        <p>Email: <a [href]="['mailto:', comment.email]">{{comment.email}} </a> </p>
+        <hr />
+    </div>
+</div>

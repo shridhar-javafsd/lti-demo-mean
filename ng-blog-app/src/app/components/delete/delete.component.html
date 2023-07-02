@@ -1,0 +1,37 @@
+<div>
+  <p>Delete component works!</p>
+
+
+  <div>
+    <p>Structural Directives Demo</p>
+
+    <div>
+      <p *ngIf="shouldShow">This is visible</p>
+    </div>
+
+    <div>
+      <p> {{myFriends[0]}} </p>
+      <p> {{myFriends[1]}} </p>
+      <p> {{myFriends[2]}} </p>
+    </div>
+
+    <div>
+      <p *ngFor="let friend of myFriends"> {{friend}} </p>
+    </div>
+  </div>
+  
+  <!-- <p> {{someData}} </p>
+
+  <button [disabled]="shouldBeDisabled">Click me</button>
+  <br />
+  <br />
+  <button (click)="actOnClick()">Click me too</button>
+
+  <p>User name: {{userName}}</p>
+
+  <input (keypress)="enterUserName($event)" />
+
+  <input [(ngModel)]="userName"/> -->
+
+
+</div>

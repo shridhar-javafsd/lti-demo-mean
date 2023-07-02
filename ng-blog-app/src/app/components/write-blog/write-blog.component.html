@@ -1,0 +1,41 @@
+<div>
+    <div class="row mb-3 pb-3">
+
+        <div class="col-2">
+            <!-- left-side bar content here   -->
+        </div>
+
+        <div class="col-8">
+            <div class="pt-3 mt-3">
+                <p class="display-4 text-primary py-2">Write a Blog Post</p>
+                <form class="form-group" (submit)="writeBlogPost()">
+                    <input class="form-control my-3" type="text" name="title" [(ngModel)]="writeBlogData.title"
+                        placeholder="Please enter blog title" required="true" />
+                    <textarea class="form-control my-3" type="textarea" name="body" [(ngModel)]="writeBlogData.body"
+                        placeholder="Please enter blog body"></textarea>
+                    <input class="form-control btn btn-outline-primary" type="submit" value="Submit" />
+                </form>
+            </div>
+
+            <div class="border border-light py-3 my-3 px-3">
+                <p class="lead">Product Details</p>
+                <app-product></app-product>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-2">
+        <!-- right-side bar content here   -->
+    </div>
+</div>
+
+
+<!-- <div>
+    <h1>Write a Blog Post</h1>
+    <form (submit)="writeBlogPost()">
+        <input type="text" name="title" [(ngModel)]="writeBlogData.title" placeholder="Please enter blog title">
+        <input type="textarea" name="body" [(ngModel)]="writeBlogData.body" placeholder="Please enter blog body">
+        <input type="submit" value="Submit">
+    </form>
+</div> -->

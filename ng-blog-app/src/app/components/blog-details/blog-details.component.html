@@ -1,0 +1,53 @@
+<div>
+    <div class="row mb-3 pb-3">
+
+        <div class="col-2">
+            <!-- left-side bar content here   -->
+        </div>
+
+        <div class="col-8">
+            <div class="pt-3 mt-3">
+                <p class="display-4 text-primary py-2">{{blogData.title}}</p>
+                <div>
+                    <img *ngIf="blogData.title" width="100%" src="https://picsum.photos/900/400" />
+                </div>
+                <div class="px-2 py-2">
+                    <app-writer *ngIf="blogData.userId" [writerId]="blogData.userId"></app-writer>
+
+                    <p><span>{{blogData.body}} </span> <span>{{blogData.body}} </span> <span>{{blogData.body}} </span>
+                        <span>{{blogData.body}} </span> <span>{{blogData.body}} </span>
+                    </p>
+                    <hr />
+                    <app-comments *ngIf="blogData.id" [blogId]="blogData.userId"></app-comments>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-2">
+        <!-- right-side bar content here   -->
+    </div>
+</div>
+
+
+
+<!-- <div class="container">
+    <h1>{{blogData.title}} </h1>
+
+    <app-writer *ngIf="blogData.userId" [writerId]="blogData.userId"></app-writer>
+
+    <p><span>{{blogData.body}} </span> <span>{{blogData.body}} </span> <span>{{blogData.body}} </span>
+        <span>{{blogData.body}} </span> <span>{{blogData.body}} </span>
+    </p>
+    <hr />
+    <app-comments *ngIf="blogData.id" [blogId]="blogData.id"></app-comments>
+</div> -->
+
+
+
+<!-- data binding  -->
+<!-- types  -->
+<!-- interpolation -->
+<!-- property binding [mnum]="num2"  -->
+<!-- event binding (click)="fun()"  -->
+<!-- two way binding [(ngModel)]="myData"  -->

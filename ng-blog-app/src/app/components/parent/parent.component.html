@@ -1,0 +1,12 @@
+<p>parent works!</p>
+
+<div>
+    <p>Parent data in parent: {{parentDataInParent}}</p>
+    <p>Child data in Parent: {{childDataInParent}} </p>
+
+    <!-- <app-child   [parentDataInChild]="parentDataInParent"></app-child> -->
+    <!-- <app-child (sendDataToParent)="getDataFromChild($event)"></app-child> -->
+
+    <app-child (sendDataToParent)="getDataFromChild($event)" [parentDataInChild]="parentDataInParent"></app-child>
+
+</div>
